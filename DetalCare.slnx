@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DentalCare.Test/DentalCare.Test.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="src/Core/DentalCare.Domain/DentalCare.Domain.csproj" />
+  </Folder>
+</Solution>
