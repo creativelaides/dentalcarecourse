@@ -1,4 +1,5 @@
 using DentalCare.Domain.Entities.Base;
+using DentalCare.Domain.Exceptions;
 using DentalCare.Domain.ValueObjects;
 
 namespace DentalCare.Domain.Entities;
@@ -12,8 +13,8 @@ public class Patient : EntityBase
     public Patient(Name name, Email email)
     {
         Id = Guid.CreateVersion7();
-        Name = name;
-        Email = email;
+        Name = name ?? throw new DomainException("El objeto nombre no puede ser nulo.");
+        Email = email ?? throw new DomainException("El objeto email no puede ser nulo.");
     }
 
 }
