@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Contracts\" />
+    <Folder Include="Contracts\Repositories\" />
+    <Folder Include="UseCases\" />
+    <Folder Include="UseCases\Commands\" />
+    <Folder Include="UseCases\Commands\CreateDentalClinic\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DentalCare.Domain\DentalCare.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
