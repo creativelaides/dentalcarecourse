@@ -1,7 +1,7 @@
 using DentalCare.Domain.Exceptions;
 using DentalCare.Domain.ValueObjects;
 
-namespace DentalCare.Test.ValueObjectsTest;
+namespace DentalCare.Test.Domain.ValueObjects;
 
 public class NameTest
 {

@@ -1,7 +1,7 @@
 using DentalCare.Domain.Exceptions;
 using DentalCare.Domain.ValueObjects;
 
-namespace DentalCare.Tests.ValueObjects;
+namespace DentalCare.Tests.Domain.ValueObjects;
 
 public class EmailTests
 {

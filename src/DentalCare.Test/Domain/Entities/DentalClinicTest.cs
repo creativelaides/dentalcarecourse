@@ -1,7 +1,7 @@
 using DentalCare.Domain.Entities;
 using DentalCare.Domain.ValueObjects;
 
-namespace DentalCare.Test.EntitiesTest;
+namespace DentalCare.Test.Domain.Entities;
 
 public class DentalClinicTest
 {

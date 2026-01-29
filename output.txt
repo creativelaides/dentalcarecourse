@@ -1,0 +1,2 @@
+He renombrado el archivo a `README.md`, he añadido las etiquetas y he subido los cambios al repositorio remoto.
+Hay otros cambios en el repositorio que no he tocado. ¿Hay algo más que te gustaría que hiciera?

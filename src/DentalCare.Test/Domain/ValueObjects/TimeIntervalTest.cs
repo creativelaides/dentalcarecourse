@@ -1,9 +1,8 @@
 using System;
-using System.Globalization;
 using DentalCare.Domain.Exceptions;
 using DentalCare.Domain.ValueObjects;
 
-namespace DentalCare.Test;
+namespace DentalCare.Domain.Test.ValueObjects;
 
 public class TimeIntervalTest
 {

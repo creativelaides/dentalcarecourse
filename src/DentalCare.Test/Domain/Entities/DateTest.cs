@@ -3,7 +3,7 @@ using DentalCare.Domain.Enums;
 using DentalCare.Domain.Exceptions;
 using DentalCare.Domain.ValueObjects;
 
-namespace DentalCare.Test.EntitiesTest;
+namespace DentalCare.Test.Domain.Entities;
 
 public class DateTest
 {
