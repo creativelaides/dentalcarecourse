@@ -30,6 +30,8 @@
   <ItemGroup>
     <Folder Include="Application\" />
     <Folder Include="Application\UseCases\" />
+    <Folder Include="Application\Utils\" />
+    <Folder Include="Application\Utils\Mediator\" />
   </ItemGroup>
 
 </Project>

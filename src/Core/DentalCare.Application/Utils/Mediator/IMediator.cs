@@ -4,5 +4,5 @@ namespace DentalCare.Application.Utils.Mediator;
 
 public interface IMediator
 {
-    Task<TReponse> SendAsync<TRequest, TReponse>(TRequest request);
+    Task<TReponse> SendAsync<TReponse>(IRequest<TReponse> request);
 }
