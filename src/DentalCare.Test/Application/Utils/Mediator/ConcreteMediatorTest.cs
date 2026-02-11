@@ -58,7 +58,7 @@ public class ConcreteMediatorTest
     }
 
     [Fact]
-    public void Should_ThrowExceptionValidation_When_NotValidCommand_IsNotValid()
+    public async Task Should_ThrowExceptionValidation_When_NotValidCommand_IsNotValidAsync()
     {
         // Given
         var request = new FakeRequest() { Name = "" };
@@ -73,7 +73,8 @@ public class ConcreteMediatorTest
         // When
 
         // Then
-        await Assert.ThrowsAsync<ApplicationValidationException>(() => mediator.SendAsync(request));
+        await Assert.ThrowsAsync<ApplicationValidationException>(
+            async () => await mediator.SendAsync(request));
 
     }
 

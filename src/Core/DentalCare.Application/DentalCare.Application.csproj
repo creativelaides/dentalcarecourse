@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Contracts\Persistence\" />
+    <Folder Include="UseCases\Queries\" />
+    <Folder Include="UseCases\Queries\GetDetailDentalClinic\" />
     <Folder Include="Utils\" />
     <Folder Include="Utils\Mediator\" />
   </ItemGroup>
