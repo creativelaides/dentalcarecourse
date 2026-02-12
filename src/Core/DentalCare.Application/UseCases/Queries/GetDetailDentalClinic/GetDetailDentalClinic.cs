@@ -5,7 +5,7 @@ using DentalCare.Application.Utils.Mediator;
 
 namespace DentalCare.Application.UseCases.Queries.GetDetailDentalClinic;
 
-public class GetDetailDentalClinic
+public sealed class GetDetailDentalClinic
 {
     public record QueryGetDetailDentalClinic :IRequest<GetDetailDentalClinicDTO>
     {
@@ -21,20 +21,10 @@ public class GetDetailDentalClinic
 
         public async Task<GetDetailDentalClinicDTO> HandleAsync(QueryGetDetailDentalClinic request)
         {
-            var dentalClinic = await _repository.GetById(request.Id);
-
-            if(dentalClinic is null)
-            {
-                throw new NotFoundException("Clínica no encontrada");
-            }
-
-            var dto = new GetDetailDentalClinicDTO
-            {
-                Id = dentalClinic.Id,
-                Name = dentalClinic.Name.Value
-            };
+            var dentalClinic = await _repository.GetById(request.Id)
+            ?? throw new NotFoundException("Clínica no encontrada");
             
-            return dto;
+            return dentalClinic.ToDto();
         }
     }
 }

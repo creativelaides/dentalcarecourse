@@ -6,4 +6,7 @@
     <Project Path="src/Core/DentalCare.Application/DentalCare.Application.csproj" />
     <Project Path="src/Core/DentalCare.Domain/DentalCare.Domain.csproj" />
   </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/DentalCare.Persistence/DentalCare.Persistence.csproj" />
+  </Folder>
 </Solution>
