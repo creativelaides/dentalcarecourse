@@ -29,7 +29,7 @@ public sealed class CreateDentalClinic
             
             try
             {
-                var result = await _dentalClinicRepository.Create(dentalClinic);
+                var result = await _dentalClinicRepository.Add(dentalClinic);
                 await _unitOfWork.Save();
                 return result.Id;
             }

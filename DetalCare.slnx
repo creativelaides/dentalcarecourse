@@ -1,6 +1,7 @@
 <Solution>
-  <Folder Name="/src/">
-    <Project Path="src/DentalCare.Test/DentalCare.Test.csproj" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/API/">
+    <Project Path="src/API/DentalCare.Api/DentalCare.Api.csproj" />
   </Folder>
   <Folder Name="/src/Core/">
     <Project Path="src/Core/DentalCare.Application/DentalCare.Application.csproj" />
@@ -8,5 +9,8 @@
   </Folder>
   <Folder Name="/src/Infrastructure/">
     <Project Path="src/Infrastructure/DentalCare.Persistence/DentalCare.Persistence.csproj" />
+  </Folder>
+  <Folder Name="/src/Test/">
+    <Project Path="src/Test/DentalCare.Test/DentalCare.Test.csproj" />
   </Folder>
 </Solution>

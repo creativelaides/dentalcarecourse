@@ -31,12 +31,12 @@ public class CreateDentalClinicTest
         // When
         var name = new Name("Dental Clinic");
         var dentalClinic = new DentalClinic(name);
-        _dentalClinicRepository.Create(Arg.Any<DentalClinic>()).Returns(dentalClinic);
+        _dentalClinicRepository.Add(Arg.Any<DentalClinic>()).Returns(dentalClinic);
         
         var result = await _commandHandler.HandleAsync(command);
 
         // Then
-        await _dentalClinicRepository.Received(1).Create(Arg.Any<DentalClinic>());
+        await _dentalClinicRepository.Received(1).Add(Arg.Any<DentalClinic>());
         await _unitOfWork.Received(1).Save();
         Assert.NotEqual(Guid.Empty, result);
     }
@@ -49,7 +49,7 @@ public class CreateDentalClinicTest
         var command = new CommandCreateDentalClinic { Name = "Dental Clinic" };
 
         // When
-        _dentalClinicRepository.Create(Arg.Any<DentalClinic>()).Throws<Exception>();
+        _dentalClinicRepository.Add(Arg.Any<DentalClinic>()).Throws<Exception>();
 
         // Then
         await Assert.ThrowsAsync<Exception>(async () => await _commandHandler.HandleAsync(command));

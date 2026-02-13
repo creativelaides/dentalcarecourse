@@ -23,8 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\DentalCare.Domain\DentalCare.Domain.csproj" />
-    <ProjectReference Include="..\Core\DentalCare.Application\DentalCare.Application.csproj" />
+    <ProjectReference Include="..\..\Core\DentalCare.Application\DentalCare.Application.csproj" />
+    <ProjectReference Include="..\..\Core\DentalCare.Domain\DentalCare.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
